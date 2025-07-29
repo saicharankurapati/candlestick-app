@@ -17,4 +17,5 @@ if uploaded_file is not None:
         x, y, w, h = cv2.boundingRect(cnt)
         if 5 < w < 30 and h > 20:
             cv2.rectangle(img_np, (x, y), (x + w, y + h), (0, 255, 0), 2)
-    st.image(img_np, caption='Detected Candles', use_column_width=True)
+    st.image(img_np, caption='Detected Candles', use_container_width=True)
+
